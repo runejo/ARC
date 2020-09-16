@@ -23,7 +23,7 @@ COPY . /usr/src/app/
 RUN chmod +x usr/src/app/script.sh && usr/src/app/script.sh
  
 # Get a tomcat 8.5
-FROM tomcat:8.5
+FROM tomcat:9.0.38
 
 # Clean it
 RUN rm -rf $CATALINA_HOME/webapps/*
